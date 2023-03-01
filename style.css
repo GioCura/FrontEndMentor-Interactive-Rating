@@ -30,7 +30,9 @@ input {
   --white: hsl(0, 0%, 100%);
   --lightgray: hsl(217, 12%, 63%);
   --medgray: hsl(216, 12%, 54%);
+  --medgraytrans: hsla(216, 12%, 54%, 0.12);
   --darkblue: hsl(213, 19%, 18%);
+  --darkbluetrans: hsl(213, 19%, 18%, 0.7);
   --darkestblue: hsl(216, 12%, 8%);
 }
 
@@ -99,9 +101,10 @@ input:checked + .form__rating,
   transition: all 0.3s;
 }
 
+.form picture,
 .thanks__selection,
 .form__rating {
-  background-color: hsla(216, 12%, 54%, 0.1);
+  background-color: var(--medgraytrans);
 }
 
 .thanks,
@@ -115,12 +118,12 @@ main {
 
 .card {
   position: relative;
-  width: 33rem;
-  height: 33rem;
+  width: 32.5rem;
+  height: 34rem;
   padding: 2.5rem 2.4rem 2.8rem;
-  border-radius: 25px;
+  border-radius: 15px;
   font-size: 1.5rem;
-  background-color: var(--darkblue);
+  background-color: var(--darkbluetrans);
 }
 
 .card p {
@@ -129,29 +132,28 @@ main {
 }
 
 .form picture {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.75rem;
+  height: 3.75rem;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-color: hsla(216, 12%, 54%, 0.14);
 }
 
 .form__star {
-  width: 1.2rem;
+  width: 1.4rem;
 }
 
 .form h1 {
-  font-size: 2.7rem;
+  font-size: 2.45rem;
   margin-bottom: 1.2rem;
 }
 
 .form p {
-  margin-bottom: 3rem;
+  margin-bottom: 3.4rem;
   line-height: 1.8rem;
 }
 
 .form__ratings {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3.4rem;
   gap: 1.8rem;
 }
 
@@ -170,10 +172,10 @@ input:checked + .form__rating {
 }
 
 .form__submit {
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   background-color: var(--orange);
 }
 
@@ -188,7 +190,7 @@ input:checked + .form__rating {
   right: 0;
   width: 100%;
   height: 100%;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   opacity: 0;
   transition: all 0.7s;
 }
@@ -199,11 +201,11 @@ input:checked + .form__rating {
 }
 
 .thanks__selection {
-  width: 16rem;
-  padding: 0.5rem 0.3rem 0.2rem;
+  width: 15.5rem;
+  padding: 0.6rem 0.3rem 0.3rem;
   border-radius: 20px;
   margin-bottom: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .thanks h1 {
@@ -212,7 +214,7 @@ input:checked + .form__rating {
 }
 
 .thanks p {
-  line-height: 2rem;
+  line-height: 2.1rem;
 }
 
 .thanks--show-yes .form {
@@ -233,18 +235,52 @@ input:checked + .form__rating {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
   html {
-    font-size: 75%;
+    font-size: 67%;
   }
 }
 
 @media (min-width: 800px) and (max-width: 999px) {
   html {
-    font-size: 70%;
+    font-size: 65%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 35rem;
+    height: 34.2rem;
+    padding: 2.5rem 2.7rem 2.8rem;
+    border-radius: 25px;
+  }
+
+  .form picture {
+    margin-bottom: 2.4rem;
+  }
+
+  .form p,
+  .thanks p {
+    font-size: 1.28rem;
+  }
+
+  .form p {
+    margin-bottom: 3.4rem;
+  }
+
+  .form__ratings {
+    margin-bottom: 3.8rem;
+  }
+
+  .form__rating {
+    padding: 1.3rem 1.8rem;
+  }
+
+  .thanks p {
+    padding: 0 0.2rem;
   }
 }
