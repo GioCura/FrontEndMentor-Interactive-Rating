@@ -164,11 +164,11 @@ main {
 }
 
 .form__rating:hover {
-  background-color: var(--medgray);
+  background-color: var(--orange);
 }
 
 input:checked + .form__rating {
-  background-color: var(--orange);
+  background-color: var(--medgray);
 }
 
 .form__submit {
