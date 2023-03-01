@@ -221,6 +221,7 @@ input:checked + .form__rating {
   position: absolute;
   z-index: -1;
   pointer-events: none;
+  opacity: 0;
 }
 
 .thanks--show-yes .thanks {
