@@ -10,7 +10,6 @@ formEl.addEventListener("submit", (e) => {
     alert("Please input a rating!");
   } else {
     cardEl.classList.toggle("thanks--show-yes");
-    formEl.style.opacity = "0";
     displayedRatingEl.textContent = selectedButton.getAttribute("id");
   }
 });
