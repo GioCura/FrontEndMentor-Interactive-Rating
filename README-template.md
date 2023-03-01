@@ -29,13 +29,14 @@ Users should be able to:
 ### Screenshot
 
 ![](images/screenshot-desktop.png)
-![](images/screenshot-desktop-active.png)
+![](images/screenshot-desktop-active-rating.png)
+![](images/screenshot-desktop-active-submit.png)
 ![](images/screenshot-desktop-thank-you.png)
 ![](images/screenshot-mobile.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://gc10-interactive-rating.netlify.app)
+- Live Site URL: [Live site](https://gc10-interactive-rating.netlify.app)
 
 ## My process
 
