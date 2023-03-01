@@ -71,7 +71,6 @@ main,
 
 .form__rating:hover,
 input:checked + .form__rating,
-.form__submit,
 .thanks h1 {
   font-weight: 700;
 }
