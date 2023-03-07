@@ -38,12 +38,15 @@ input {
 
 body {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
   background-color: var(--darkestblue);
 }
 
-main,
 .form,
 .form picture,
 .form__ratings,
@@ -51,14 +54,12 @@ main,
   display: flex;
 }
 
-main,
 .form picture,
 .form__ratings,
 .thanks {
   align-items: center;
 }
 
-main,
 .form picture,
 .form__ratings {
   justify-content: center;
@@ -112,7 +113,7 @@ input:checked + .form__rating,
 }
 
 main {
-  height: 90%;
+  margin-bottom: 1.5rem;
 }
 
 .card {
@@ -229,7 +230,6 @@ input:checked + .form__rating {
 }
 
 .attribution {
-  height: 10%;
   font-size: 1.1rem;
 }
 
